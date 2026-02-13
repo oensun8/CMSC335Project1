@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'SN Pro';
+    src: url('SNPro-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --fav-color: black;
+}
+
+body {
+    background-image: url("hq720.jpg");
+    background-color: purple;
+    color: var(--fav-color);
+    font-family: 'SN Pro', sans-serif;
+}
+
+#main-content {
+    align-items: center;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+thead, tbody {
+    font-family: 'SN Pro', sans-serif;
+}
+
+.table-things {
+    padding-top: 2rem;
+    align-items: center;
+}
+
+table {
+    border: 0.1rem solid black;
+    border-collapse: collapse;
+}
+
+td {
+    border: 0.15rem solid black;
+    padding: 0.5rem;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: lime;
+    color: var(--fav-color);
+}
+
+tbody tr:nth-child(even) {
+    background-color: orange;
+    color: var(--fav-color);
+}
+
+thead tr {
+    background-color: orange;
+    color: var(--fav-color);
+}
+
+
